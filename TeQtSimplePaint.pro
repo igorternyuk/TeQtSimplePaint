@@ -15,10 +15,12 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     matrix.cpp \
-    model.cpp
+    model.cpp \
+    canvas.cpp
 
 HEADERS  += mainwindow.h \
     matrix.h \
-    model.h
+    model.h \
+    canvas.h
 
 FORMS    += mainwindow.ui
