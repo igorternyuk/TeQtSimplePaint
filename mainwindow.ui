@@ -50,7 +50,14 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="spinBoxBrushSize"/>
+         <widget class="QSpinBox" name="spinBoxBrushSize">
+          <property name="maximum">
+           <number>1000</number>
+          </property>
+          <property name="value">
+           <number>5</number>
+          </property>
+         </widget>
         </item>
         <item>
          <widget class="QPushButton" name="btnChooseBrushColor">
@@ -97,6 +104,16 @@
      <height>19</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="action_open_file"/>
+    <addaction name="action_save_file"/>
+    <addaction name="action_quit"/>
+   </widget>
+   <addaction name="menuFile"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -105,8 +122,38 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
+   <addaction name="action_open_file"/>
+   <addaction name="action_save_file"/>
+   <addaction name="action_quit"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_open_file">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/gfx/icons/open.png</normaloff>:/gfx/icons/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open File</string>
+   </property>
+  </action>
+  <action name="action_save_file">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/gfx/icons/save.png</normaloff>:/gfx/icons/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save file</string>
+   </property>
+  </action>
+  <action name="action_quit">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/gfx/icons/quitar.png</normaloff>:/gfx/icons/quitar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <customwidgets>
@@ -117,6 +164,8 @@
    <container>1</container>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

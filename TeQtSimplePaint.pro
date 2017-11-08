@@ -24,3 +24,6 @@ HEADERS  += mainwindow.h \
     canvas.h
 
 FORMS    += mainwindow.ui
+
+RESOURCES += \
+    resources.qrc

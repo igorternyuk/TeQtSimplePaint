@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/gfx">
+        <file>icons/open.png</file>
+        <file>icons/save.png</file>
+        <file>icons/quitar.png</file>
+    </qresource>
+</RCC>
